@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="extras/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Poppins"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      font-size: 16px;
+    }
+  </style>
+  <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+  </script>
+
+  <body>
+    <!-- sidebar -->
+    <nav
+      class="w3-sidebar w3-black w3-collapse w3-top w3-padding"
+      style="z-index: 3; width: 250px; font-weight: bold"
+      id="mySidebar"
+    >
+      <br />
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-button w3-hide-large w3-display-topright"
+        style="width: 20%"
+        >&#10006;</a
+      >
+      <div class="w3-container">
+        <h2 class="w3-padding-16">
+          <b>My<br />Company</b>
+        </h2>
+      </div>
+      <div class="w3-bar-block">
+        <a
+          href="#shirts"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Shirts</a
+        >
+        <a
+          href="#jeans"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Jeans</a
+        >
+        <br />
+        <a
+          href="#tops"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Tops</a
+        >
+        <a
+          href="#dresses"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Dresses</a
+        >
+        <br />
+        <a
+          href="#home"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Home</a
+        >
+        <a
+          href="#about"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >About</a
+        >
+        <a
+          href="#contact"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- top menu -->
+    <header class="w3-container w3-top w3-hide-large w3-black w3-padding">
+      <a
+        href="javascript:void(0)"
+        class="w3-button w3-black w3-margin-right"
+        onclick="w3_open()"
+        >☰</a
+      >
+      <span>My Company</span>
+    </header>
+
+    <!-- Main Content -->
+    <div class="w3-main" style="margin-left: 290px; margin-right: 30px">
+      <h1
+        id="home"
+        class="w3-xxxlarge"
+        style="margin-top: 60px; margin-left: 20px"
+      >
+        Clothing Store
+      </h1>
+
+      <div class="w3-display-container w3-card-4">
+        <img src="images/main.jpg" alt="Collections" style="width: 100%" />
+        <div class="w3-container w3-display-topright" style="max-width: 240px">
+          <h1 class="w3-xxlarge w3-hide-small">New Arrivals</h1>
+          <h1 class="w3-xxlarge w3-hide-small">Collection 2021</h1>
+          <h1 class="w3-large w3-hide-large w3-hide-medium">New Arrivals</h1>
+          <h1 class="w3-large w3-hide-large w3-hide-medium">Collection 2021</h1>
+          <button class="w3-button w3-black">
+            <a href="#shirts"></a>Shop Now
+          </button>
+        </div>
+      </div>
+      <hr />
+
+      <!--Shirt Section-->
+
+      <div id="shirts" class="w3-row-padding">
+        <h1>Shirts</h1>
+        <div class="w3-quarter">
+          <div class="w3-card-4 w3-hover-opacity">
+            <img src="images/shirt1.jpg" alt="shirt" style="width: 100%" />
+            <p style="padding-left: 10px">
+              BLOCK- PLAIN LINEN MENS SHIRT<br /><b>&#8377;599/-</b>
+            </p>
+          </div>
+        </div>
+
+        <div class="w3-quarter">
+          <div class="w3-card-4 w3-hover-opacity">
+            <img src="images/shirt2.jpg" alt="shirt" style="width: 100%" />
+            <p style="padding-left: 10px">
+              TAPLE- LINEN CHECK MEN SHIRT - MAROON<br /><b>&#8377;999/-</b>
+            </p>
+          </div>
+        </div>
+
+        <div class="w3-quarter">
+          <div class="w3-card-4 w3-hover-opacity">
+            <img src="images/shirt3.jpg" alt="shirt" style="width: 100%" />
+            <p style="padding-left: 10px">
+              SHADOW- CHECK SLIM FITSHIRT - MAROON<br /><b>&#8377;1799/-</b>
+            </p>
+          </div>
+        </div>
+
+        <div class="w3-quarter">
+          <div class="w3-card-4 w3-hover-opacity">
+            <img src="images/shirt4.jpg" alt="shirt" style="width: 100%" />
+            <p style="padding-left: 10px">
+              RUSTO - CHECK SLIM FIT MEN SHIRT - MAROON<br /><b
+                >&#8377;1199/-</b
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <!--Jeans-->
+
+      <div id="jeans" class="w3-row-padding">
+        <h1>Jeans</h1>
+        <div class="w3-quarter">
+          <div class="w3-card-4 w3-hover-opacity">
+            <img src="images/jeans1.jpg" alt="jeans" style="width: 100%" />
+            <p style="padding-left: 10px">
+              DRAKE- SLIM FIT MEN'S JEANS DRAWSTRING - OLIVE<br /><b
+                >&#8377;2599/-</b
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="w3-quarter">
+          <div class="w3-card-4 w3-hover-opacity">
+            <img src="images/jeans2.jpg" alt="jeans" style="width: 100%" />
+            <p style="padding-left: 10px">
+              LATT- SLIM FIT MEN'S JEANS - BLUE<br /><b>&#8377;2999/-</b>
+            </p>
+          </div>
+        </div>
+
+        <div class="w3-quarter">
+          <div class="w3-card-4 w3-hover-opacity">
+            <img src="images/jeans3.jpg" alt="jeans" style="width: 100%" />
+            <p style="padding-left: 10px">
+              CHUNO- TONED SLIM FIT MEN'S JEANS -BLUE<br /><b>&#8377;3999/-</b>
+            </p>
+          </div>
+        </div>
+
+        <div class="w3-quarter">
+          <div class="w3-card-4 w3-hover-opacity">
+            <img src="images/jeans4.jpg" alt="jeans" style="width: 100%" />
+            <p style="padding-left: 10px">
+              TEXTURED SLIM FIT MEN'S TROUSER - BEIGE <br /><b>&#8377;2899/-</b>
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <!--Tops-->
+
+      <div id="tops" class="w3-row-padding">
+        <h1>Tops</h1>
+        <div class="w3-quarter">
+          <div class="w3-card-4 w3-hover-opacity">
+            <img src="images/tops1.jpg" alt="tops" style="width: 100%" />
+            <p style="padding-left: 10px">
+              KASH- PLAIN WOMEN'S SHIRT - BLACK<br /><b>&#8377;899/-</b>
+            </p>
+          </div>
+        </div>
+
+        <div class="w3-quarter">
+          <div class="w3-card-4 w3-hover-opacity">
+            <img src="images/tops2.jpg" alt="tops" style="width: 100%" />
+            <p style="padding-left: 10px">
+              BLUEBELL- PLAIN WOMEN'S TOP - WHITE<br /><b>&#8377;1999/-</b>
+            </p>
+          </div>
+        </div>
+
+        <div class="w3-quarter">
+          <div class="w3-card-4 w3-hover-opacity">
+            <img src="images/tops3.jpg" alt="tops" style="width: 100%" />
+            <p style="padding-left: 10px">
+              SPARROW- VISCOSE PLAIN WOMEN'S TOP - OFF WHITE<br /><b
+                >&#8377;2999/-</b
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="w3-quarter">
+          <div class="w3-card-4 w3-hover-opacity">
+            <img src="images/tops4.jpg" alt="tops" style="width: 100%" />
+            <p style="padding-left: 10px">
+              INFUSE- STRIPED WPMEN'S TOP - BLUE<br /><b>&#8377;2899/-</b>
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <!--Dresses-->
+
+      <div id="dresses" class="w3-row-padding">
+        <h1>Dresses</h1>
+        <div class="w3-quarter">
+          <div class="w3-card-4 w3-hover-opacity">
+            <img src="images/dress1.jpg" alt="dresses" style="width: 100%" />
+            <p style="padding-left: 10px">
+              TORI- PRINTED WOMEN'S LONG DRESS - GREY<br /><b>&#8377;2899/-</b>
+            </p>
+          </div>
+        </div>
+
+        <div class="w3-quarter">
+          <div class="w3-card-4 w3-hover-opacity">
+            <img src="images/dress2.jpg" alt="dresses" style="width: 100%" />
+            <p style="padding-left: 10px">
+              JUST- PRINTED LONG WOMEN'S DRESS - NAVY
+              <br /><b>&#8377;3999/-</b>
+            </p>
+          </div>
+        </div>
+
+        <div class="w3-quarter">
+          <div class="w3-card-4 w3-hover-opacity">
+            <img src="images/dress3.jpg" alt="dresses" style="width: 100%" />
+            <p style="padding-left: 10px">
+              VIOLEN- PRINTED WOMEN'S LONG DRESS - NAVY<br /><b
+                >&#8377;4399/-</b
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="w3-quarter">
+          <div class="w3-card-4 w3-hover-opacity">
+            <img src="images/dress4.jpg" alt="dresses" style="width: 100%" />
+            <p style="padding-left: 10px">
+              SPOKE- TEXTURED SLIM FIT MEN'S TROUSER - BEIGE <br /><b
+                >&#8377;3999/-</b
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <!--Contact-->
+      <br />
+
+      <div id="contact" class="w3-row w3-light-gray">
+        <div class="w3-half w3-center w3-padding-48">
+          <p>Location:Bangalore,India</p>
+          <p>Phone:+91-9821825132</p>
+          <p>Email:mycompany@mail.com</p>
+        </div>
+
+        <div class="w3-half w3-left-align w3-padding-48">
+          <form>
+            <input
+              type="text"
+              placeholder="Name "
+              class="w3-border w3-small w3-margin-top"
+              style="width: 50%"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Email"
+              class="w3-border w3-small w3-margin-top"
+              style="width: 50%"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Message"
+              class="w3-border w3-small w3-margin-top"
+              style="width: 80%"
+              required
+            />
+            <br />
+            <button class="w3-button w3-black w3-small w3-margin-top">
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!--About-->
+
+      <div id="about" class="w3-container w3-black w3-padding-16">
+        <p style="font-size: 10px" class="w3-center">Follow us on:</p>
+        <div class="w3-small w3-wide w3-center">
+          <a href="https://facebook.com" target="_blank"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <a href="https://linkedin.com" target="_blank"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+          <a href="https://reddit.com" target="_blank"
+            ><i class="fa fa-reddit"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
